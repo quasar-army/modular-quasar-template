@@ -24,7 +24,6 @@ module.exports = configure(function (/* ctx */) {
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
       'i18n',
-      'vuemodel-strapi',
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
