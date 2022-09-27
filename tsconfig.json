@@ -1,0 +1,13 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "modules/*": [
+        "src/modules/*"
+      ]
+    }
+  }
+}
