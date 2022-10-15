@@ -22,9 +22,7 @@ module.exports = configure(function (/* ctx */) {
     // preFetch: true,
 
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [
-      'i18n',
-    ],
+    boot: [],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: [
