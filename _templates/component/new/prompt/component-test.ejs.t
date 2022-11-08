@@ -1,7 +1,6 @@
 ---
 to: <%= componentDirectory %>/__test__/<%= componentNameKebab %>.cy.ts
 ---
-import { mount } from '@cypress/vue'
 import <%= componentNamePascal %> from '../<%= componentNamePascal %>.vue'
 
 describe('<<%= componentNamePascal %>>', () => {
@@ -10,7 +9,7 @@ describe('<<%= componentNamePascal %>>', () => {
   })
 
   it('mounts', () => {
-    mount(<%= componentNamePascal %>, {
+    cy.mount(<%= componentNamePascal %>, {
       props: {
         //
       },

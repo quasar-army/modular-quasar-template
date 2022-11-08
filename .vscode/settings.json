@@ -21,7 +21,6 @@
       "fileMatch": [
         "cypress.json"
       ],
-      "url": "https://on.cypress.io/cypress.schema.json"
-    }
+   }
   ]
 }

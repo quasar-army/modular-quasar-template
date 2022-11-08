@@ -1,4 +1,3 @@
-import { mount } from '@cypress/vue'
 import ManageBookingsView from '../ManageBookingsView.vue'
 
 describe('<ManageBookingsView>', () => {
@@ -7,7 +6,7 @@ describe('<ManageBookingsView>', () => {
   })
 
   it('mounts', () => {
-    mount(ManageBookingsView, {
+    cy.mount(ManageBookingsView, {
       props: {
         //
       },
