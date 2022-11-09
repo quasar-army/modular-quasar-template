@@ -9,7 +9,7 @@
   >
     <div class="i-logos-vue text-3xl" />
     <h1
-      class="text-weight-thin text-center"
+      class="text-weight-thin text-center text-blue-gray-600"
       style="font-size: 4em;"
     >
       You Can Build Anything...
