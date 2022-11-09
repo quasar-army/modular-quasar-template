@@ -23,5 +23,6 @@
       ],
       "url": "https://on.cypress.io/cypress.schema.json"
     }
-  ]
+  ],
+  "unocss.root": "packages/client"
 }
