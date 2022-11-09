@@ -3,10 +3,13 @@
 </script>
 
 <template>
-  <q-page class="column items-center justify-evenly">
+  <q-page
+    padding
+    class="column flex-center"
+  >
     <div class="i-logos-vue text-3xl" />
     <h1
-      class="text-weight-thin"
+      class="text-weight-thin text-center"
       style="font-size: 4em;"
     >
       You Can Build Anything...
