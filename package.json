@@ -25,11 +25,14 @@
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
+    "@iconify/json": "^2.1.134",
     "@quasar/app-vite": "^1.0.0",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^4.2.1",
     "@types/node": "^12.20.21",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
+    "@unocss/preset-icons": "^0.46.3",
+    "@unocss/preset-uno": "^0.46.3",
     "autoprefixer": "^10.4.2",
     "change-case": "^4.1.2",
     "eslint": "^8.10.0",
@@ -40,7 +43,9 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.0.0",
     "inflection": "^1.13.2",
-    "typescript": "^4.5.4"
+    "postcss": "^8.4.18",
+    "typescript": "^4.5.4",
+    "unocss": "^0.46.3"
   },
   "engines": {
     "node": "^18 || ^16 || ^14.19",
