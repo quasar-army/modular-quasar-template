@@ -7,7 +7,7 @@ describe('<BookingsView>', () => {
   })
 
   it('mounts', () => {
-    mount(BookingsView, {
+    cy.mount(BookingsView, {
       props: {
         //
       },
