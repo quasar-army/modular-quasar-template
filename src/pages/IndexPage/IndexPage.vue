@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <q-page class="row items-center justify-evenly">
+  <q-page class="column items-center justify-evenly">
+    <div class="i-logos-vue text-3xl" />
     <h1
       class="text-weight-thin"
       style="font-size: 4em;"

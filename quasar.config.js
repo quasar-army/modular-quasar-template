@@ -11,7 +11,7 @@
 const { configure } = require('quasar/wrappers')
 const path = require('path')
 
-module.exports = configure(function (/* ctx */) {
+module.exports = configure(function(/* ctx */) {
   return {
     eslint: {
       warnings: true,
@@ -22,7 +22,9 @@ module.exports = configure(function (/* ctx */) {
     // preFetch: true,
 
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [],
+    boot: [
+      'unocss',
+    ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: [
@@ -48,11 +50,12 @@ module.exports = configure(function (/* ctx */) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       vitePlugins: [
-        ['@intlify/vite-plugin-vue-i18n', {
-
-          // you need to set i18n resource including paths !
-          include: path.resolve(__dirname, './src/i18n/**'),
-        }],
+        // ['@intlify/vite-plugin-vue-i18n', {
+        //
+        //   // you need to set i18n resource including paths !
+        //   include: path.resolve(__dirname, './src/i18n/**'),
+        // }],
+        ['unocss/vite', {}],
       ],
     },
 
