@@ -11,6 +11,7 @@
 const { configure } = require('quasar/wrappers')
 const path = require('path')
 const VueMacros = require('unplugin-vue-macros/vite')
+const env = require('./env/' + process.env.NODE_ENV)
 
 module.exports = configure(function (/* ctx */) {
   return {
@@ -54,6 +55,8 @@ module.exports = configure(function (/* ctx */) {
         [VueMacros],
         ['unocss/vite', {}],
       ],
+
+      env,
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
