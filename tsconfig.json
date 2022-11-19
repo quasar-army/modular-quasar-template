@@ -1,6 +1,14 @@
 {
   "extends": "@quasar/app-vite/tsconfig-preset",
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue-macros/volar/define-model"
+    ]
+  },
   "compilerOptions": {
+    "types": [
+      "unplugin-vue-macros/macros-global"
+    ],
     "useDefineForClassFields": true,
     "experimentalDecorators": true,
     "baseUrl": ".",

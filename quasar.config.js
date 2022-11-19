@@ -10,8 +10,9 @@
 
 const { configure } = require('quasar/wrappers')
 const path = require('path')
+const VueMacros = require('unplugin-vue-macros/vite')
 
-module.exports = configure(function(/* ctx */) {
+module.exports = configure(function (/* ctx */) {
   return {
     eslint: {
       warnings: true,
@@ -50,11 +51,7 @@ module.exports = configure(function(/* ctx */) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       vitePlugins: [
-        // ['@intlify/vite-plugin-vue-i18n', {
-        //
-        //   // you need to set i18n resource including paths !
-        //   include: path.resolve(__dirname, './src/i18n/**'),
-        // }],
+        [VueMacros],
         ['unocss/vite', {}],
       ],
     },
