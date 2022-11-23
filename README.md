@@ -37,3 +37,19 @@ Generate modules for things like new models (e.g. `User` or `Comment`) and conce
 ```
 hygen new module
 ```
+
+## Views
+We **never** put global state, or api requests in our "lower level" components. Lower level components are things like "Tables", "Cards" and any leaf components in the tree.
+
+Instead, We create **views** that manage the data flow in our application, and render the lower level components.
+We can generate a view with the following code:
+```
+hygen new view
+```
+
+## Components
+Always use generators when creating new components! Most of our components will be placed inside a corresponding "modules" directory.
+For example, a `UserCard` component should go in the `modules/User` directory.
+```
+hygen new component
+```
