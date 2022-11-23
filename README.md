@@ -35,5 +35,5 @@ Modules help us organize our code. You may think of them as little "worlds" that
 
 Generate modules for things like new models (e.g. `User` or `Comment`) and concepts that don't make sense as a model (e.g. `Authentication`)
 ```
-hygen new model
+hygen new module
 ```
