@@ -4,26 +4,26 @@ An opinionated starter template for Quasar that uses a modular approach
 
 ## Install the dependencies
 ```bash
-yarn
+pnpm
 ```
 
 
 ### Start the app in development mode
-Note that we don't use the quasar cli! We get into the habit of using `yarn dev` to make it easier to change the dev command if needed.
+Note that we don't use the quasar cli! We get into the habit of using `pnpm dev` to make it easier to change the dev command if needed.
 ```bash
-yarn dev
+pnpm dev
 ```
 
 
 ### Lint the files
 ```bash
-yarn lint
+pnpm lint
 ```
 
 
 ### Build the app for production
 ```bash
-yarn build
+pnpm build
 ```
 
 # Generators
