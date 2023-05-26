@@ -10,7 +10,6 @@
 
 const { configure } = require('quasar/wrappers')
 const path = require('path')
-const VueMacros = require('unplugin-vue-macros/vite')
 const env = require('./env/' + process.env.NODE_ENV)
 
 module.exports = configure(function (/* ctx */) {
@@ -52,7 +51,7 @@ module.exports = configure(function (/* ctx */) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       vitePlugins: [
-        [VueMacros],
+        ['unplugin-vue-macros/vite', {}],
         ['unocss/vite', {}],
       ],
 
