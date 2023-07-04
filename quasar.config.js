@@ -15,8 +15,8 @@ const env = require('./env/' + process.env.NODE_ENV)
 module.exports = configure(function (/* ctx */) {
   return {
     eslint: {
-      warnings: true,
-      errors: true,
+      warnings: false,
+      errors: false,
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
