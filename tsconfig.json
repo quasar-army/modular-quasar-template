@@ -22,6 +22,9 @@
     "paths": {
       "modules/*": [
         "src/modules/*"
+      ],
+      "config/*": [
+        "config/*"
       ]
     }
   }

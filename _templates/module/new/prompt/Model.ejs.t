@@ -2,13 +2,13 @@
 to: <%= directories.modules %>/<%= modulePascal %>/<%= modulePascal %>.ts
 ---
 import { Model } from 'pinia-orm'
-import { Attr, Num } from 'pinia-orm/dist/decorators'
+import { Attr, Uid } from 'pinia-orm/dist/decorators'
 
 export default class <%= modulePascal %> extends Model {
   static entity = '<%= moduleSnakePlural %>'
 
   // Fields
-  @Num(0, { notNullable: true }) declare id: number
+  @Uid() declare id: string
   @Attr() declare some_value: null
 
   // Relationships
