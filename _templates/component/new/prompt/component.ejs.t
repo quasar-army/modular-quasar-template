@@ -3,13 +3,13 @@ to: <%= componentDirectory %>/<%= componentNamePascal %>.vue
 ---
 <script setup lang="ts">
 // interface Props {
-//   // moduleValue: string
+//   // modelValue: string
 // }
 
 // defineProps<Props>()
 
 // defineEmits<{
-//   // (event: 'update:moduleValue', payload: string): void
+//   // (event: 'update:modelValue', payload: string): void
 // }>()
 </script>
 
