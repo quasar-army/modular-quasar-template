@@ -3,7 +3,7 @@ to: <%= componentDirectory %>/<%= componentNamePascal %>/<%= componentNamePascal
 ---
 <script setup lang="ts">
 // interface Props {
-//   // moduleValue: string
+//   // modelValue: string
 // }
 
 // defineProps<Props>()
