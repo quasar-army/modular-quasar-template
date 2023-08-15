@@ -20,6 +20,12 @@ module.exports = {
         // See https://github.com/cypress-io/eslint-plugin-cypress#rules
         'plugin:cypress/recommended',
       ],
+      plugins: [
+        'cypress'
+      ],
+      env: {
+        "cypress/globals": true
+      }
     },
   ],
 
@@ -56,8 +62,7 @@ module.exports = {
 
     // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
     // required to lint *.vue files
-    'vue'
-
+    'vue',
   ],
 
   globals: {
