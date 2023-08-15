@@ -1,4 +1,3 @@
-import { computed } from 'vue'
 import { RouteLocationNamedRaw } from 'vue-router'
 import { baseMenuItems } from './baseMenuItems'
 

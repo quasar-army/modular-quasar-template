@@ -52,6 +52,15 @@ module.exports = configure(function (/* ctx */) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       vitePlugins: [
+        ['unplugin-auto-import/vite', {
+          imports: [
+            'vue',
+          ],
+          dts: true,
+          eslintrc: {
+            enabled: true,
+          },
+        }],
         ['unplugin-vue-macros/vite', {}],
         ['unocss/vite', {}],
       ],

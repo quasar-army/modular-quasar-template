@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import MainDrawer from './MainDrawer.vue'
 import MainHeader from './MainHeader.vue'
 import { useMainMenuItems } from './useMainMenuItems'
