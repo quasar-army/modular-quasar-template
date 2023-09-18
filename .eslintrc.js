@@ -54,7 +54,7 @@ module.exports = {
 
     'standard',
 
-    './.exlintrc-auto-import.json'
+    './.eslintrc-auto-import.json'
   ],
 
   plugins: [
