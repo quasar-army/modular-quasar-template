@@ -29,6 +29,7 @@
   "devDependencies": {
     "@quasar/app-vite": "^1.6.2",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^5.1.1",
+    "@types/lodash-es": "^4.17.9",
     "@types/node": "^20.6.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
