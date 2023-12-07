@@ -12,11 +12,13 @@
     "test:e2e": "cross-env NODE_ENV=test start-test \"quasar dev\" http-get://localhost:9000 \"cypress open --e2e\"",
     "test:e2e:ci": "cross-env NODE_ENV=test start-test \"quasar dev\" http-get://localhost:9000 \"cypress run --e2e\"",
     "test:component": "cross-env NODE_ENV=test cypress open --component",
-    "test:component:ci": "cross-env NODE_ENV=test cypress run --component"
+    "test:component:ci": "cross-env NODE_ENV=test cypress run --component",
+    "generate": "bun ./scripts/generate.ts"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.6",
     "@vueuse/core": "^10.4.1",
+    "augment-quasar": "^0.0.32",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.6",
     "pinia-orm": "^1.7.0",
@@ -27,6 +29,10 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@quasar-army/ts-generator": "^0.0.2",
+    "@quasar-army/ts-generator-in-json-schema": "^0.0.1",
+    "@quasar-army/ts-generator-out-pinia-orm": "^0.0.3",
+    "@quasar-army/ts-generator-persister-file": "^0.0.2",
     "@quasar/app-vite": "^1.6.2",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^5.1.1",
     "@types/lodash-es": "^4.17.9",
@@ -45,6 +51,7 @@
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.17.0",
+    "fast-glob": "^3.3.2",
     "inflection": "^2.0.1",
     "postcss": "^8.4.29",
     "typescript": "^5.2.2",
