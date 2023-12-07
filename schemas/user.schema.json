@@ -1,0 +1,34 @@
+{
+  "$id": "http://localhost/schemas/user",
+  "title": "User",
+  "entity": "users",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "label": "Full Name...",
+      "description": "Your name",
+      "component": "input"
+    },
+    "age": {
+      "type": "integer",
+      "label": "Age",
+      "description": "Your age",
+      "minimum": 18,
+      "maximum": 150,
+      "component": "slider"
+    },
+    "is_active": {
+      "type": "boolean",
+      "label": "Account Active",
+      "description": "Is this users account active?",
+      "component": "checkbox"
+    },
+    "date_of_birth_date_time_tz": {
+      "type": "string",
+      "label": "Birthday",
+      "description": "Your birthday!",
+      "component": "isoDate"
+    }
+  }
+}
