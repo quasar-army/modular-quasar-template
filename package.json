@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@quasar-army/ts-generator": "^0.0.2",
-    "@quasar-army/ts-generator-in-json-schema": "^0.0.1",
+    "@quasar-army/ts-generator-in-json-schema": "^0.0.2",
     "@quasar-army/ts-generator-out-pinia-orm": "^0.0.3",
     "@quasar-army/ts-generator-persister-file": "^0.0.2",
     "@quasar/app-vite": "^1.6.2",
