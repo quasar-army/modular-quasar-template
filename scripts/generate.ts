@@ -48,7 +48,6 @@ const modelNames = piniaOrmModelFiles.map(file => {
 })
 
 modelNames.forEach((fileName) => {
-  console.log('one')
   mkdirSync(`./src/modules/${fileName}`, { recursive: true })
 
   createEmptyFile(`./src/modules/${fileName}/.gitkeep`)
