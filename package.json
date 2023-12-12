@@ -35,7 +35,7 @@
   "devDependencies": {
     "@quasar-army/ts-generator": "^0.0.2",
     "@quasar-army/ts-generator-in-json-schema": "^0.0.2",
-    "@quasar-army/ts-generator-out-pinia-orm": "^0.0.4",
+    "@quasar-army/ts-generator-out-pinia-orm": "^0.0.5",
     "@quasar-army/ts-generator-persister-file": "^0.0.2",
     "@quasar/app-vite": "^1.7.1",
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^5.1.1",
