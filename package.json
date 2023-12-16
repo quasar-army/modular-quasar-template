@@ -17,20 +17,20 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.9",
-    "@vuemodel/core": "^0.0.19",
-    "@vuemodel/pinia-local-storage": "^0.0.20",
+    "@vuemodel/core": "^0.0.22",
+    "@vuemodel/pinia-local-storage": "^0.0.22",
     "@vueuse/core": "^10.7.0",
     "ajv": "^8.12.0",
-    "augment-quasar": "^0.0.34",
+    "augment-quasar": "^0.0.35",
     "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "pinia-orm": "^1.7.2",
     "pluralize": "^8.0.0",
     "quasar": "^2.14.1",
     "unplugin-auto-import": "^0.17.2",
-    "vue": "^3.3.11",
+    "vue": "^3.3.12",
     "vue-router": "^4.2.5",
-    "vue3-ajv-form": "^0.0.36"
+    "vue3-ajv-form": "^0.0.39"
   },
   "devDependencies": {
     "@quasar-army/ts-generator": "^0.0.2",
@@ -48,10 +48,10 @@
     "autoprefixer": "^10.4.16",
     "change-case": "^5.3.0",
     "cypress": "^13.6.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-cypress": "^2.15.1",
-    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.4.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.19.2",
@@ -60,7 +60,7 @@
     "postcss": "^8.4.32",
     "typescript": "^5.3.3",
     "unocss": "^0.58.0",
-    "unplugin-vue-macros": "^2.7.1"
+    "unplugin-vue-macros": "^2.7.3"
   },
   "engines": {
     "node": "^18 || ^16 || ^14.19",
