@@ -22,5 +22,6 @@
         "cypress.json"
       ],
     }
-  ]
+  ],
+  "unocss.root": "packages/client"
 }
