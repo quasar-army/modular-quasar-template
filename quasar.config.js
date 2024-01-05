@@ -51,6 +51,12 @@ module.exports = configure(function (/* ctx */) {
         config: path.join(__dirname, './config'),
       },
 
+      viteVuePluginOptions: {
+        script: {
+          defineModel: true,
+        },
+      },
+
       vueRouterMode: 'history', // available values: 'hash', 'history'
 
       vitePlugins: [
