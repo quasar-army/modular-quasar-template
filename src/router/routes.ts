@@ -1,10 +1,18 @@
 import { RouteRecordRaw } from 'vue-router'
 
+function resolveImportedRoutes (modules: Record<string, { [key: string]: any }>, exportName: string) {
+  return Object.values(modules)
+    .filter(module => module[exportName])
+    .flatMap(module => module[exportName])
+}
+
 const routes: RouteRecordRaw[] = [
+  ...resolveImportedRoutes(import.meta.globEager('../modules/*/routes.ts'), 'base'),
   {
     path: '/',
     component: () => import('layouts/MainLayout/MainLayout.vue'),
     children: [
+      ...resolveImportedRoutes(import.meta.globEager('../modules/*/routes.ts'), 'main'),
       {
         path: '',
         component: () => import('pages/IndexPage/IndexPage.vue'),

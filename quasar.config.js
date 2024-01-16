@@ -46,6 +46,12 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16',
       },
 
+      extendViteConf (viteConf) {
+        Object.assign(viteConf.define, {
+          __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
+        })
+      },
+
       alias: {
         modules: path.join(__dirname, './src/modules'),
         config: path.join(__dirname, './config'),

@@ -24,7 +24,7 @@ defineProps<{
         v-for="menuItem in menuItems"
         :key="menuItem.label"
         color="primary"
-        class="justify-start"
+        style="justify-content: start;"
         :to="menuItem.to"
         :icon="menuItem.icon"
         :label="menuItem.label"
