@@ -97,6 +97,9 @@ devDependencies:
   change-case:
     specifier: ^4.1.2
     version: 4.1.2
+  cross-env:
+    specifier: ^7.0.3
+    version: 7.0.3
   cypress:
     specifier: ^13.6.2
     version: 13.6.2
