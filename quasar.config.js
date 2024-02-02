@@ -10,7 +10,8 @@
 
 const { configure } = require('quasar/wrappers')
 const path = require('path')
-const env = require('./env/' + process.env.NODE_ENV)
+const envPath = path.join(__dirname, './env/', process.env.NODE_ENV)
+const env = require(envPath)
 
 module.exports = configure(function (/* ctx */) {
   return {
