@@ -14,7 +14,8 @@
     "test:e2e:ci": "cross-env NODE_ENV=test start-test \"quasar dev\" http-get://localhost:9000 \"cypress run --e2e\"",
     "test:component": "cross-env NODE_ENV=test cypress open --component",
     "test:component:ci": "cross-env NODE_ENV=test cypress run --component",
-    "generate": "bun ./scripts/generate.ts"
+    "generate": "bun ./scripts/generate.ts",
+    "blue:listen": "blue listen"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.9",
@@ -63,7 +64,8 @@
     "postcss": "^8.4.33",
     "typescript": "^5.3.3",
     "unocss": "^0.58.3",
-    "unplugin-vue-macros": "^2.7.9"
+    "unplugin-vue-macros": "^2.7.9",
+    "dotenv": "^16.4.1"
   },
   "engines": {
     "node": "^20 || ^18 || ^16 || ^14.19",
