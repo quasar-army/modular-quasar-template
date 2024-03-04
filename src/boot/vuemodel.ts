@@ -12,8 +12,8 @@ export default boot(({ app, store }) => {
     drivers: {
       local: {
         implementation: piniaLocalVueModelDriver,
-        config: { pinia: store }
-      }
+        config: { pinia: store },
+      },
     },
   })
 

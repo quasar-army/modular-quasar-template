@@ -78,7 +78,6 @@ module.exports = {
     Capacitor: 'readonly',
     chrome: 'readonly',
     defineModel: 'readonly',
-    defineModels: 'readonly',
   },
 
   // add your custom rules here
