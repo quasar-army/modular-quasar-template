@@ -47,6 +47,8 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16',
       },
 
+      publicPath: process.env.PUBLIC_PATH ?? '',
+
       extendViteConf (viteConf) {
         Object.assign(viteConf.define, {
           __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
