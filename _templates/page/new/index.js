@@ -1,13 +1,17 @@
 const nameComponentPrompt = require('./prompt/nameComponentPrompt')
 const changeCase = require('change-case')
 const CONSTANTS = require('../../CONSTANTS')
+const moduleSelectPrompts = require('../../moduleSelectPrompts')
 
 module.exports = {
   prompt: async ({ prompter }) => {
-    // Name the component
-    const answers = await prompter.prompt(nameComponentPrompt())
+    // Discover the kind of component
+    const answers = await prompter.prompt(moduleSelectPrompts[0])
 
-    const componentDirectory = CONSTANTS.directories.pages
+    // Name the component
+    Object.assign(answers, await prompter.prompt(nameComponentPrompt(answers)))
+
+    const componentDirectory = `${CONSTANTS.directories.modules}/${answers.moduleName}/pages/${answers.componentName}`
 
     return {
       ...answers,

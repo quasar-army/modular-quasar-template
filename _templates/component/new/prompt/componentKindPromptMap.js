@@ -1,4 +1,4 @@
-const moduleSelectPrompts = require('./moduleSelectPrompts')
+const moduleSelectPrompts = require('../../../moduleSelectPrompts')
 const baseComponentNamePrompt = require('./baseComponentNamePrompt')
 const otherComponentName = require('./otherComponentName')
 

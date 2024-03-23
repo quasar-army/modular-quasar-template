@@ -21,6 +21,7 @@ module.exports = {
         ...answers,
         ...CONSTANTS,
         modulePascal: changeCase.pascalCase(answers.name),
+        modulePascalPlural: changeCase.pascalCase(modulePlural),
         moduleKebab: changeCase.pathCase(answers.name),
         moduleKebabPlural: changeCase.pathCase(modulePlural),
         moduleSnakePlural: changeCase.snakeCase(modulePlural),

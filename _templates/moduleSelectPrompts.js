@@ -1,4 +1,4 @@
-const CONSTANTS = require('../../../CONSTANTS')
+const CONSTANTS = require('./CONSTANTS')
 const fs = require('fs')
 
 const directoriesInDirectory = fs.readdirSync(CONSTANTS.directories.modules, { withFileTypes: true })
