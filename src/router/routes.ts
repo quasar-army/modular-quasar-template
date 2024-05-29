@@ -7,12 +7,12 @@ function resolveImportedRoutes (modules: Record<string, { [key: string]: any }>,
 }
 
 const routes: RouteRecordRaw[] = [
-  ...resolveImportedRoutes(import.meta.globEager('../modules/*/routes.ts'), 'base'),
+  ...resolveImportedRoutes(import.meta.glob('../modules/*/routes.ts', { eager: true }), 'base'),
   {
     path: '/',
     component: () => import('layouts/MainLayout/MainLayout.vue'),
     children: [
-      ...resolveImportedRoutes(import.meta.globEager('../modules/*/routes.ts'), 'main'),
+      ...resolveImportedRoutes(import.meta.glob('../modules/*/routes.ts', { eager: true }), 'main'),
       {
         path: '',
         component: () => import('pages/IndexPage/IndexPage.vue'),
